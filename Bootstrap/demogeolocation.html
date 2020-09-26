@@ -1,0 +1,35 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function getLocation(){
+         var maplink = document.getElementById("mylink");
+            var res = document.getElementById("myid");
+            if(navigator.geolocation){
+                navigator.geolocation.getCurrentPosition(
+                    (position)=>{
+                        lat = position.coords.latitude;
+                        lon = position.coords.longitude;
+                        res.innerHTML = lat+ " "+lon;
+                        maplink.href='https://www.openstreetmap.org/#map=18/'+lat+'/'+lon;
+                        maplink.innerText='Show Map';
+                    },
+                    ()=>{
+                        res.innerHTML = 'Invalid location';
+                    })
+           }else{
+               res.innerHTML='No support for geolocation'
+           }
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value="Show Location" 
+           onclick = getLocation()>
+    <div id="myid"></div>
+    <a  id = "mylink"></a>
+</body>
+</html>

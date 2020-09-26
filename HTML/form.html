@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <title>Form Demo</title>
+    <header> 
+        <h1>ABC Academy</h1>
+        <h3>Training Simplified</h3>
+    </header>
+</head>
+<body>
+    
+	<form action="imgdemo.html" method="post" name="myform">
+        <table> 
+            <tr>
+                 <td>Enter Name</td>
+                 <td><input type="text" name="username" id="uname" placeholder="Enter name"/><br/></td></tr>
+                 <td>Enter Password</td>
+                 <td><input type="password" name="password" id="password" placeholder="Enter password"/><br/></td>
+            </tr>
+        
+    <tr>
+	<td>Gender</td>
+	<td><input type="radio" name="r1" value="Male">Male</td>
+    <td><input type="radio" name="r1" value="Female" checked>Female</td>
+   </tr>
+   <tr>
+     <td>Hobbies</td>
+	<td><input type="checkbox" name="hobby" value="0">Sports</td>
+	<td><input type="checkbox" name="hobby" value="1">Music</td>
+	<td><input type="checkbox" name="hobby" value="2">Dance</td>
+    <td><input type="checkbox" name="hobby" value="3">Drawing</td>
+    </tr>
+	<tr><td>Select Language</td>
+	
+	<td><select name="lang" id="lang" multiple size="3"></td>
+		<td><option value="select">--select--</option></td>
+		<td><option value="Java">Java</option></td>
+		<td><option value="Hibernate">Hibernate</option></td>
+		<td><option value="HTML">HTML</option></td>
+		<td><option value="Spring">Spring</option></td>
+	</select></tr>
+	
+	<td><textarea rows="10" cols="10"></textarea></td>
+	<input type="submit" value="Register"/>
+	<input type="Reset" value="Clear"/>
+	</form>
+	<button>Add</button>
+</table>
+
+
+
+</body>
+</html>

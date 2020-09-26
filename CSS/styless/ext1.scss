@@ -1,0 +1,13 @@
+$bgcolor:red;
+$color:yellow;
+$text:uppercase;
+
+h2{
+    background-color: $bgcolor;
+    color: $color;
+    text-transform: $text;
+}
+p{
+    color: $bgcolor;
+    background-color: $color;
+}
